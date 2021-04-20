@@ -361,6 +361,8 @@ footer {
     background-color: #282828;
 }
 
+/* Footer left */
+
 .footer-left {
     display: flex;
     justify-content: start;
@@ -396,6 +398,11 @@ footer {
 
 .footer-icon .far {
    color: #999999;
+   padding: 0 5px;
+}
+
+.footer-icon .far:hover {
+    color: white;
 }
 
 .footer-left,
@@ -403,6 +410,8 @@ footer {
     width: 230px;
     height: 100%;
 }
+
+/* Footer center */
 
 .footer-center {
     width: 40%;
@@ -442,16 +451,87 @@ footer {
     width: 60%;
     height: 3px;
     background-color:#999999;
+    cursor: pointer;
 }
 
-.player-box .player .circle-player {
+.player-box .player .bar-player {
     width: 30%;
     height: 3px;
     background-color:white;
     border-radius: 20px;
 }
 
+.player-box .player:hover .bar-player {
+    background-color:red;
+}
 
+.player-box .player .circle-bar {
+    position: relative;
+    left: 95px;
+    bottom: 9px;
+    width: 15px;
+    height: 15px;
+    background-color:white;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.player-box .player:hover .circle-bar {
+    visibility: visible;
+}
+
+/* Footer right */
+
+.footer-right {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-right .icon {
+    width: 50%;
+}
+
+.footer-right .icon .fas {
+   color: white;
+   font-size: 12px;
+   font-weight: bold;
+   padding: 0 10px;
+}
+
+.footer-right .volume-bar {
+    width: 50%;
+    width: 50%;
+    height: 3px;
+    background-color:#999999;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer-right .volume-bar .volume {
+    width: 40%;
+    height: 3px;
+    background-color:white;
+}
+
+.footer-right .volume-bar .circle-vol {
+    position: relative;
+    left: 33px;
+    bottom: 7px;
+    width: 12px;
+    height: 12px;
+    background-color:white;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.footer-right .volume-bar:hover .circle-vol {
+    visibility: visible;
+}
+
+.footer-right .volume-bar:hover .volume {
+    background-color: red;
+}
 
 
 
