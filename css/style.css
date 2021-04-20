@@ -38,6 +38,10 @@ main {
     overflow: hidden;
 }
 
+.active {
+    border-bottom: 2px solid #adff2f;
+}
+
 /* Navbar Laterale */
 
 /* Navbar Top */
@@ -300,7 +304,41 @@ a.btn:hover {
 
 /* Overlay */
 
+.layover {
+    position: relative;
+}
 
+.img-overlay {
+    display: block;
+    opacity: 1;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay .far {
+    color: white;
+    font-size: 80px;
+    padding: 16px 32px;
+}
+
+.cover:hover .img-overlay {
+    opacity: .3;
+}
+
+.cover:hover .overlay {
+    opacity: 1;
+}
 
 .recent-play h2,
 .create h2,
@@ -317,7 +355,6 @@ a.btn:hover {
 }
 
 .cover p {
-   padding: 10px 0;
    font-size: 12px;
    font-weight: bolder;
 }
@@ -535,17 +572,6 @@ footer {
 .footer-right .volume-bar:hover .volume {
     background-color: #adff2f;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Media Queries */
 
