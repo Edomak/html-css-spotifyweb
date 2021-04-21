@@ -42,9 +42,9 @@ main {
     border-bottom: 2px solid #adff2f;
 }
 
-/* Navbar Laterale */
+/* Aside */
 
-/* Navbar Top */
+/* Aside-Navbar Top */
 
 aside {
     position: fixed;
@@ -160,7 +160,7 @@ aside {
     color: white;
 }
 
-/* Navbar Bottom */
+/* Aside-Navbar Bottom */
 
 .nav-bottom {
     height: 40px;
@@ -610,8 +610,8 @@ footer {
     }
 
     .footer-center .fas {
-        padding: 3px 3px;
-        font-size: 12px;
+        padding: 15px 3px;
+        font-size: 14px;
     }
 
     .player-box span {
@@ -620,13 +620,13 @@ footer {
     }
     
     .footer-center .far {
-        font-size: 12px;
-        padding: 3px 3px;
+        font-size: 18px;
+        padding: 15px 3px;
     }
 
     .footer-right .icon .fas {
         font-size: 10px;
-        padding: 3px 3px;
+        padding: 15px 3px;
     }
 }
 
